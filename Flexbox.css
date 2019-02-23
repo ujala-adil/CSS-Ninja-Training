@@ -4,7 +4,8 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 48.47%;
+    width: calc(48.47% - 20px);
+    margin: 10px;
 }
 
 .box1 {
@@ -51,6 +52,5 @@
     display: flex;
     border: 10px solid goldenrod;
     min-height: 100vh;  /*viewport height*/
-   /* flex-direction: column;*/
     flex-wrap: wrap;
 }
