@@ -49,8 +49,9 @@
 .container {
     display: flex;
     border: 10px solid goldenrod;
-    min-width: 100vh;  /*viewport height*/
-    flex-direction: row; /*row - default*/
+    min-height: 100vh;  /*viewport height*/
+    flex-direction: column-reverse; /*row - default*/
+/*    flex-direction: row; */
 /*    flex-direction: column; */
 /*    flex-direction: row-reverse; */
 /*    flex-direction: column-reverse; */
