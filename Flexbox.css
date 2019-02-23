@@ -4,9 +4,7 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 46.94%;
-/*    padding: 10px; */
-    border: 10px solid mistyrose;
+    flex: 1;
 }
 
 .box1 {
@@ -19,14 +17,17 @@
 
 .box3 {
     background: #9b59b6;
+    order: 3;
 }
 
 .box4 {
     background: #34495e;
+    order: -1;
 }
 
 .box5 {
     background: #f1c40f;
+    order: -2;
 }
 
 .box6 {
@@ -35,6 +36,7 @@
 
 .box7 {
     background: #e74c3c;
+    order: 2;
 }
 
 .box8 {
@@ -51,7 +53,4 @@
 
 .container {
     display: flex;
-    border: 10px solid goldenrod;
-    min-height: 100vh;  /*viewport height*/
-    flex-wrap: wrap;
 }
