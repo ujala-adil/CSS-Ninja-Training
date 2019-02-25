@@ -4,7 +4,7 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 33.3333%;
+    flex: 1;
 }
 
 .box1 {
@@ -13,7 +13,7 @@
 
 .box2 {
     background: #3498db;
-    padding: 200px;
+    flex: 2; /*this flex item takes twice as much the space as that of the other flex items.*/
 }
 
 .box3 {
@@ -26,11 +26,11 @@
 
 .box5 {
     background: #f1c40f;
+    flex: 3;
 }
 
 .box6 {
     background: #e67e22;
-    padding: 0px;
 }
 
 .box7 {
@@ -43,8 +43,6 @@
 
 .box9 {
     background: #2ecc71;
-    padding: 50px;
-    align-self: flex-end;
 }
 
 .box10 {
@@ -57,6 +55,8 @@
     height: 100vh;
     align-items: flex-start;
 }
-
-/*align-self: auto | flex-start | flex-end | center | baseline | stretch;*/
-/*This property is applied on individual flex items rather than the entire flex container.*/
+/*flex is about how do we divide the extra space or when there is not enough space, among the flex items.*/
+/*Each flex item takes up equal amount of space regardless of how much content each flex item has.*/
+/*flex is at what porportion should i scale up or down if I have extra space or not enough space.*/
+/*The values of flex can be decimal also.*/
+/*When there is extra space, it is divided proportionally to each item.*/
