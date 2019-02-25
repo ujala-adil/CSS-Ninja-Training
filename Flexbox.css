@@ -1,34 +1,43 @@
 .box {
     color: white;
-    font-size: 100px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
+    flex-basis: 250px; 
+    flex-grow: 1;
 }
 
 .box1 {
     background: #1abc9c;
-    /*flex: 10 5 400px; Shorthand of the three following properties. flex: flex-grow flex-shrink flex-basis; */
-    flex-basis: 400px;
-    flex-grow: 10;
-    flex-shrink: 5; /*How much of this item must give up in proportion to the other one(s).*/
 }
 
 .box2 {
     background: #3498db;
-    flex: 1 1 400px;
-    /*flex-basis: 400px;
-    flex-grow: 1;
-    flex-shrink: 1;  */
+}
+
+.box3 {
+    background: #9b59b6;
+    flex-grow: 5;
+}
+
+.box4 {
+    background: #34495e;
+    flex-basis: 100px;
+}
+
+.box5 {
+    background: #f1c40f;
+}
+
+.box6 {
+    background: #e67e22;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     border: 10px solid mistyrose;
     height: 100vh;
-    align-items: flex-start;
 }
-/*flex-grow is how to we deal ith the extra space.*/
-/*flex-shrink is how do we scale down when there is not enough space. */
-/*Default flex-grow is 0 i.e. when there is extra space, don't do anything. It stays on it's ideal (or flex-basis) space.*/
-/*Default flex-shrink is 1*/
