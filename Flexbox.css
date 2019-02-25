@@ -4,7 +4,7 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 25%;
+    width: 33.3333%;
 }
 
 .box1 {
@@ -13,6 +13,7 @@
 
 .box2 {
     background: #3498db;
+    padding: 200px;
 }
 
 .box3 {
@@ -29,6 +30,7 @@
 
 .box6 {
     background: #e67e22;
+    padding: 0px;
 }
 
 .box7 {
@@ -41,6 +43,8 @@
 
 .box9 {
     background: #2ecc71;
+    padding: 50px;
+    align-self: flex-end;
 }
 
 .box10 {
@@ -50,13 +54,9 @@
 .container {
     display: flex;
     border: 10px solid mistyrose;
-    align-content: center;
-    justify-content: center;
     height: 100vh;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-/*align-content does the cross axis. It has a default value of stretch.*/
-/*align-content works when we have multiple lines of code.*/
-/*Note: this property has no effect when there is only one line of flex items.*/
-/*With just width given to flex items, the width is divided among the items. Therefore, giving flex-wrap:wrap; to give multiple lines to our vode.*/
+/*align-self: auto | flex-start | flex-end | center | baseline | stretch;*/
+/*This property is applied on individual flex items rather than the entire flex container.*/
