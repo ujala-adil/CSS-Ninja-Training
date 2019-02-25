@@ -4,11 +4,11 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
+    width: 25%;
 }
 
 .box1 {
     background: #1abc9c;
-    font-size: 30px;
 }
 
 .box2 {
@@ -17,17 +17,14 @@
 
 .box3 {
     background: #9b59b6;
-    font-size: 150px;
 }
 
 .box4 {
     background: #34495e;
-    font-size: 200px;
 }
 
 .box5 {
     background: #f1c40f;
-    font-size: 10px;
 }
 
 .box6 {
@@ -48,20 +45,18 @@
 
 .box10 {
     background: #16a085;
-    font-size: 77px;
 }
 
 .container {
     display: flex;
     border: 10px solid mistyrose;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     height: 100vh;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-/*justify-content aligns the elements on the main axis. From default, main axis is from left to right. */
-/*In case of align-items, we are not concerned about the main axis, we're more concerned about the cross axis(top to bottom by default.)*/
-/*When a height is given to the flex container, the align-items has a default value of stretch.*/
-/*  align-items: stretch | flex-start | flex-end | center | baseline;*/
-/*With flex-direction: column; , the cross axis is from left to right, */
-/*It's on the cross axis, so it needs a height to work.*/
+/*align-content does the cross axis. It has a default value of stretch.*/
+/*align-content works when we have multiple lines of code.*/
+/*Note: this property has no effect when there is only one line of flex items.*/
+/*With just width given to flex items, the width is divided among the items. Therefore, giving flex-wrap:wrap; to give multiple lines to our vode.*/
