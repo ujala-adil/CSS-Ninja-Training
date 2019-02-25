@@ -1,6 +1,6 @@
 .box {
     color: white;
-    font-size: 20px;
+    font-size: 100px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -8,6 +8,7 @@
 
 .box1 {
     background: #1abc9c;
+    font-size: 30px;
 }
 
 .box2 {
@@ -16,14 +17,17 @@
 
 .box3 {
     background: #9b59b6;
+    font-size: 150px;
 }
 
 .box4 {
     background: #34495e;
+    font-size: 200px;
 }
 
 .box5 {
     background: #f1c40f;
+    font-size: 10px;
 }
 
 .box6 {
@@ -44,14 +48,20 @@
 
 .box10 {
     background: #16a085;
+    font-size: 77px;
 }
 
 .container {
     display: flex;
-    justify-content: center; /*flex-start | flex-end | center | space-between | space-around | space-evenly*/
     border: 10px solid mistyrose;
+    align-items: center;
+    height: 100vh;
     flex-direction: column;
-    min-height: 100vh;
 }
-/*justify-content defines the alignment along the main axis.*/
-/*In case of justify-content property with flex-direction: column;, the main axis is from top to bottom. */
+
+/*justify-content aligns the elements on the main axis. From default, main axis is from left to right. */
+/*In case of align-items, we are not concerned about the main axis, we're more concerned about the cross axis(top to bottom by default.)*/
+/*When a height is given to the flex container, the align-items has a default value of stretch.*/
+/*  align-items: stretch | flex-start | flex-end | center | baseline;*/
+/*With flex-direction: column; , the cross axis is from left to right, */
+/*It's on the cross axis, so it needs a height to work.*/
