@@ -4,49 +4,22 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
-    flex: 1;
 }
 
 .box1 {
     background: #1abc9c;
+    /*flex: 10 5 400px; Shorthand of the three following properties. flex: flex-grow flex-shrink flex-basis; */
+    flex-basis: 400px;
+    flex-grow: 10;
+    flex-shrink: 5; /*How much of this item must give up in proportion to the other one(s).*/
 }
 
 .box2 {
     background: #3498db;
-    flex: 2; /*this flex item takes twice as much the space as that of the other flex items.*/
-}
-
-.box3 {
-    background: #9b59b6;
-}
-
-.box4 {
-    background: #34495e;
-}
-
-.box5 {
-    background: #f1c40f;
-    flex: 3;
-}
-
-.box6 {
-    background: #e67e22;
-}
-
-.box7 {
-    background: #e74c3c;
-}
-
-.box8 {
-    background: #bdc3c7;
-}
-
-.box9 {
-    background: #2ecc71;
-}
-
-.box10 {
-    background: #16a085;
+    flex: 1 1 400px;
+    /*flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;  */
 }
 
 .container {
@@ -55,8 +28,7 @@
     height: 100vh;
     align-items: flex-start;
 }
-/*flex is about how do we divide the extra space or when there is not enough space, among the flex items.*/
-/*Each flex item takes up equal amount of space regardless of how much content each flex item has.*/
-/*flex is at what porportion should i scale up or down if I have extra space or not enough space.*/
-/*The values of flex can be decimal also.*/
-/*When there is extra space, it is divided proportionally to each item.*/
+/*flex-grow is how to we deal ith the extra space.*/
+/*flex-shrink is how do we scale down when there is not enough space. */
+/*Default flex-grow is 0 i.e. when there is extra space, don't do anything. It stays on it's ideal (or flex-basis) space.*/
+/*Default flex-shrink is 1*/
