@@ -1,0 +1,270 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    min-height: 160vh;
+}
+
+.flex-container-left{
+    display: flex;
+    background-color: #082239;
+    min-height: 120vh;
+    width: 400px;
+    color: white;
+    flex-direction: column;
+    box-shadow: 10px 10px 42px -12px rgba(0,0,0,0.75);
+}
+
+.box1 {
+    text-align: center;
+}
+ img {
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    border: 6px solid #1f66a356; 
+    margin-top: 10%;
+}
+
+.box2, .box4, .box5, .box6{
+    align-self: flex-start;
+    padding: 10px 40px 10px 10px;
+    margin-bottom: 7px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #7db9e8 0%,#267dc4 50%,#1c4e88 100%);
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-around;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.box3 i {
+    margin-right: 30px;
+}
+
+.skills-container, .lang-container {
+    width: 500px;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 60%;
+    height: 10px;
+    background-color: #c7dcee;
+    border-radius: 1000px;
+}
+
+li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: #1c4568;    
+    border-radius: 1000px;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+li.c::after{
+    animation-name: c;
+}
+
+@keyframes c
+{
+    to {
+        width: 49%;       
+    }
+
+}li.cpp::after{
+    animation-name: cpp;
+}
+
+@keyframes cpp
+{
+    to {
+        width: 45%;       
+    }
+}
+
+li.html::after{
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 55%;
+    }
+}
+
+li.css3::after{
+    animation-name: css3;
+}
+
+@keyframes css3
+{
+    to {
+        width: 50%;       
+    }
+}
+
+li.javascript::after{
+    animation-name: javascript;
+}
+
+@keyframes javascript
+{
+    to {
+        width: 25%;       
+    }
+}
+
+li.python::after{
+    animation-name: python;
+}
+
+@keyframes python
+{
+    to {
+        width: 30%;       
+    }
+}
+
+.flex-container-right{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.name{
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #163774;
+    align-self: center;
+}
+
+.profession {
+    color: #277ca3;
+    font-size: 20px;
+    border-right: 1px solid #274d94;
+    border-left: 1px solid #274d94;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+ .professional-profile, .edu-content, .work-content, .cert-content { 
+    font-size: 22px;
+    margin: 0px 20px -10px 30px;
+    padding: 20px 60px;
+    background: linear-gradient(to right, #eff4fce3 50%,#eff4fce3 100%);
+    color: #082239; 
+    box-shadow: 5px 6px 14px -6px rgba(0,0,0,0.75);
+}
+
+.prof-profile, .work-exp, .education, .certification{
+    padding: 13px;
+    font-size: 22px;
+    margin: -20px -60px 0 -60px;
+    align-self: center;
+    text-align: center;
+    background: linear-gradient(to right, #082239 0%,#0c2841 50%, #7e929e 100%);
+    color: white;   
+}
+
+.professional-profile p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.major, .work {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #257ec7;
+    letter-spacing: 1px;
+}
+
+.institute, .company {
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+.duration{
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.flex-container-left{
+    flex-shrink: 2;
+}
+
+.flex-container-right{
+    flex-shrink: 1;
+}
+
+.box7 {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+li.urdu::after{
+    animation-name: urdu;
+}
+
+@keyframes urdu {
+    to {
+        width: 56%;
+    }
+}
+li.english::after{
+    animation-name: english;
+}
+
+@keyframes english {
+    to {
+        width: 55%;
+    }
+}
+li.chinese::after{
+    animation-name: chinese;
+}
+
+@keyframes chinese {
+    to {
+        width: 45%;
+    }
+}
