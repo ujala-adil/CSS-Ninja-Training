@@ -215,6 +215,7 @@ footer a{
     footer ul {
         width: 46%;
         margin-left: 1%;
+        text-align: center;
     }
 }
 
