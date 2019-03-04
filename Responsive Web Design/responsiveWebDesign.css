@@ -183,6 +183,8 @@ footer a{
 
 /* MEDIA QUERIES */
 
+/* FOR TABLETS */
+
 @media screen and (max-width: 768px){
     #featured li{
         width: 48%
@@ -219,9 +221,28 @@ footer a{
     }
 }
 
+/* FOR MOBILES */
 
 @media screen and (max-width: 480px){
     #featured li{
-        width: 92%
+        width: 90%;
+        margin: 20px 5%;
+    }
+
+    footer ul {
+        width: 98%;
+        text-align: center;
+    }
+
+    #home-menu li {
+        float: none;
+        width: 96%;
+        margin: 30px 2% !important;
+    }
+
+    #main-banner img {
+        position: relative;
+        width: 180%;
+        left: -40%;
     }
 }
